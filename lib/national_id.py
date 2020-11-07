@@ -38,8 +38,6 @@ class NationalID:
         year_check = (
             (self.year <= current_datetime.year - 2000) if self.century == 3 else True
         )  # can't be in the future
-        if self.year > current_datetime.year and self.century == 3:
-            year_check = False
         month_check = self.month in range(1, 13)
 
         # check for months that have 31 day and febuary which is 28 or 29
