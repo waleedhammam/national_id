@@ -59,7 +59,7 @@ The national ID consists of the following:
 
 ## How to run tests
 
-- Utils test: `pytest -s tests/test_national_id.py`
+- Lib test: `pytest -s tests/test_national_id.py`
 - Test the endpoint `python3 -m pytest -s tests/test_endpoint.py`
 
 ## Dockerfile

@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from loguru import logger
 
-from ..utils.national_id import NationalID
+from ..lib.national_id import NationalID
 
 
 class NationalIDValidatorTests(TestCase):
