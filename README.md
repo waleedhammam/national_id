@@ -1,5 +1,6 @@
 # Egyptian national ID validator and data-extractor API
 
+![[https://pypi.python.org/pypi/national-id](pypi)](https://img.shields.io/pypi/v/national-id.svg)
 [![Actions Status](https://github.com/waleedhammam/national_id/workflows/national_id/badge.svg?query=branch%3Amain)](https://github.com/waleedhammam/national_id/actions?query=branch%3Amain)
 [![codecov.io](https://codecov.io/github/waleedhammam/national_id/coverage.svg?branch=main)](https://codecov.io/github/waleedhammam/national_id?branch=main)
 
@@ -69,3 +70,22 @@ The national ID consists of the following:
 
 - You can build and run the dockerfile in `docker directory`
   `docker build -t waleedhammam/national_id .`
+
+## Pip installable
+
+- Library national id is pip installable `pip install national-id` to be used in the whole system
+
+- Example usage:
+
+  ```python
+  from lib.national_id import NationalID
+  instance.get_info()
+
+  Out:
+  (True,
+   {'year_of_birth': '1985',
+    'month_of_birth': '10',
+    'day_of_birth': '29',
+    'governorate': 'Al Daqhlia',
+    'type': 'Male'})
+  ```
