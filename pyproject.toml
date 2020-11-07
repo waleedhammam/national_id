@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "national_id"
+packages = [{ include = "lib" }]
+
+version = "1.0.2"
+description = "Egyptian national ID validator and data-extractor AP"
+authors = ["waleedhammam <waleed.hammam@gmail.com>"]
+license = "Apache-2.0"
+
+readme = "README.md"
+homepage = "https://github.com/waleedhammam/national_id"
+repository = "https://github.com/waleedhammam/national_id"
+keywords = ["python", "bottle", "nationalid"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+bottle = "0.12.17"
+requests = "2.23.0"
+loguru = "0.5.3"
+pytest = "5.4.3"
+WebTest = "2.0.35"
+pytest-cov = "2.10.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.pytest.ini_options]
+markers = ["integration: marks tests as integration (deselect with '-m \"not integration\"')",
+           "unittests"]
