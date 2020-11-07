@@ -11,8 +11,10 @@
 
 ## How to run
 
-- run `python3 server.py`
+- Install requirments `pip3 install -r requirements.txt`
+- Run `python3 server.py`
 - Server will be running on port 8001
+- Endpoint can be reached at http://localhost:8001/get_info
 
 ## Endpoint
 
