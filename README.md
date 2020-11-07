@@ -1,7 +1,6 @@
+# Egyptian national ID validator and data-extractor API
 
 [![codecov.io](https://codecov.io/github/waleedhammam/national_id/coverage.svg?branch=main)](https://codecov.io/github/waleedhammam/national_id?branch=main)
-  
-# Egyptian national ID validator and data-extractor API
 
 ## Requirments
 
@@ -62,3 +61,8 @@ The national ID consists of the following:
 
 - Utils test: `pytest -s tests/test_national_id.py`
 - Test the endpoint `python3 -m pytest -s tests/test_endpoint.py`
+
+## Dockerfile
+
+- You can build and run the dockerfile in `docker directory`
+  `docker build -t waleedhammam/national_id .`
