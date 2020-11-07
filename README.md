@@ -1,5 +1,6 @@
 # Egyptian national ID validator and data-extractor API
 
+[![Actions Status](https://github.com/waleedhammam/national_id/workflows/national_id/badge.svg?query=branch%3Amain)](https://github.com/waleedhammam/national_id/actions?query=branch%3Amain)
 [![codecov.io](https://codecov.io/github/waleedhammam/national_id/coverage.svg?branch=main)](https://codecov.io/github/waleedhammam/national_id?branch=main)
 
 ## Requirments

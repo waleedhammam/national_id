@@ -25,7 +25,7 @@ def get_info():
         national_id_number = request_data["id_number"]
     except (JSONDecodeError, KeyError) as e:
         json_error_msg = f"Error parsing input data:\n{str(e)}"
-        return HTTPResponse({"Error": json_error_msg}, status=500, headers={"Content-Type": "application/json"},)
+        return HTTPResponse({"error": json_error_msg}, status=500, headers={"Content-Type": "application/json"},)
 
     national_id_object = NationalID(national_id_number)
 

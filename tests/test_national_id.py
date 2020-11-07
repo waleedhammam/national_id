@@ -46,7 +46,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test03_invalid_national_id_number_year(self):
@@ -61,7 +61,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test04_invalid_national_id_number_month(self):
@@ -76,7 +76,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test05_invalid_national_id_number_day(self):
@@ -91,7 +91,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test06_invalid_national_id_number_day_febuary(self):
@@ -106,7 +106,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test07_invalid_national_id_number_day_febuary_29(self):
@@ -121,7 +121,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test08_invalid_national_id_number_day_30_months(self):
@@ -136,7 +136,7 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
 
     def test09_invalid_national_id_number_governate_code(self):
@@ -151,5 +151,5 @@ class NationalIDValidatorTests(TestCase):
         validity, error = instance.get_info()
         self.assertFalse(validity)
         self.assertEqual(
-            error, {"Error": f"Invalid national ID number: {number}. Please enter the correct one"},
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
