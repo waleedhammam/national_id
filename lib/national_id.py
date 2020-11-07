@@ -65,7 +65,7 @@ class NationalID:
         id_owner_data = {}
         if not self._validate():
             number_error_msg = f"Invalid national ID number: {self.id_number}. Please enter the correct one"
-            return False, {"Error": number_error_msg}
+            return False, {"error": number_error_msg}
 
         id_owner_data["year_of_birth"] = f"20{self.year}" if self.century == 3 else f"19{self.year}"
         id_owner_data["month_of_birth"] = f"{self.month}"
