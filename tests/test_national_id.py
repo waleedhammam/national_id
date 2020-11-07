@@ -153,3 +153,31 @@ class NationalIDValidatorTests(TestCase):
         self.assertEqual(
             error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
         )
+
+    def test10_against_invalid_input(self):
+        """Test case for valid national id number with invalid data.
+
+        **Test Scenario**
+        - Get the class instance.
+        - Get the national id number with invalid input number
+        """
+        number = "0000000000000"
+        instance = NationalID(number)
+        validity, error = instance.get_info()
+        self.assertFalse(validity)
+        self.assertEqual(
+            error, {"error": f"Invalid national ID number: {number}. Please enter the correct one"},
+        )
+
+    def test11_check_male_and_femal(self):
+        """Test case for valid national id number with correct data.
+
+        **Test Scenario**
+        - Get the class instance.
+        - Check if the type of owner is male or femal
+        """
+        number = "29509181201214"
+        instance = NationalID(number)
+        validity, data = instance.get_info()
+        self.assertTrue(validity)
+        self.assertEqual(data["type"], "Male")
