@@ -1,6 +1,7 @@
 # Egyptian national ID validator and data-extractor API
 
 ![[https://pypi.python.org/pypi/national-id](pypi)](https://img.shields.io/pypi/v/national-id.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/11b02e4d7c704c92afcdd42ff2e28c8a)](https://app.codacy.com/gh/waleedhammam/national_id?utm_source=github.com&utm_medium=referral&utm_content=waleedhammam/national_id&utm_campaign=Badge_Grade)
 [![Actions Status](https://github.com/waleedhammam/national_id/workflows/national_id/badge.svg?query=branch%3Amain)](https://github.com/waleedhammam/national_id/actions?query=branch%3Amain)
 [![codecov.io](https://codecov.io/github/waleedhammam/national_id/coverage.svg?branch=main)](https://codecov.io/github/waleedhammam/national_id?branch=main)
 
