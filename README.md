@@ -18,6 +18,15 @@
 -   Server will be running on port 8001
 -   Endpoint can be reached at <http://localhost:8001/get_info>
 
+## How to run Using poetry
+
+```bash
+git clone https://github.com/waleedhammam/national_id
+cd national_id
+poetry install
+python3 server.py
+```
+
 ## Endpoint
 
 -   `/get_info`
