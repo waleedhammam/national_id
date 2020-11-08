@@ -48,16 +48,3 @@ class NationalIDValidatorTests(TestCase):
         with self.assertRaises(AppError):
             # expect a 400 bad request
             self.app.post("/get_info", params=f'{{"id_number": "{number}"}}', content_type="application/json")
-
-    def test03_endpoint_with_invalid_json(self):
-        """Test case for making sure endpoint is will respond as ok with the invalid payload
-
-        **Test Scenario**
-        - Post the national id number
-        - Response will be 400 bad request
-        """
-        number = "49509181201214"
-        with self.assertRaises(AppError):
-            # expect a 500 internal server error
-            self.app.post("/get_info", params=f'{{"id_number": {number}}}', content_type="application/json")
-

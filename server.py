@@ -16,7 +16,6 @@ def get_info():
     Returns:
         HTTPResponse: - 200 OK, json_info: national id is validated and info extraction ok
                       - 400 Bad Request: Wrong national id number
-                      - 500 Internal Server Error: Invalid request from user
     """
     request_body = request.body.read()
 
@@ -25,7 +24,7 @@ def get_info():
         national_id_number = request_data["id_number"]
     except (JSONDecodeError, KeyError) as e:
         json_error_msg = f"Error parsing input data:\n{str(e)}"
-        return HTTPResponse({"error": json_error_msg}, status=500, headers={"Content-Type": "application/json"},)
+        return HTTPResponse({"error": json_error_msg}, status=400, headers={"Content-Type": "application/json"},)
 
     national_id_object = NationalID(national_id_number)
 
